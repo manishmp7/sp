@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+input[type="submit"] {
+    border: 0;
+    text-decoration: none;
+    outline: 0;
+    text-align: center;
+    font: bold 16px Tahoma,Verdana,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    background: #e89e23;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    text-shadow: #b94b00 0 1px 0;
+    border-radius:25px;
+}
+input[type="submit"]:hover{
+        background: #e47601;
+}
+</style>
+<body style="background: #506a85;color: #fff;">
+<form name="contactform" method="post" action="send_form_email.php">
+<table width="450px" align="center" cellspacing="10">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Mobile Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="10" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Comments *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="32" rows="7"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">   
+ </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
